@@ -114,15 +114,27 @@
       }
 
       @keyframes pulse {
-        0%, 100% { transform: scale(1); }
-        50% { transform: scale(1.05); }
+          0%, 100% { transform: scale(1); }
+          50% { transform: scale(1.05); }
       }
 
       img {
         width: 100px;
         height: auto;
         border-radius: 50%;
-        border: 4px solid rgba(255, 255, 255, 0.6); /* Adding a border with transparency around the image */
+        /* border: 4px solid rgba(255, 255, 255, 0.6);  */
+      }
+
+      img {
+        border: 5px solid rgba(255, 255, 255, 0.8); /* A soft, white frame */
+        display: block;
+        margin: auto; /* Center the image within its container */
+        opacity: 0.8; /* Slightly see-through, adding depth */
+      }
+
+      img:hover {
+        opacity: 1; /* Full opacity on hover, bringing the image to full focus */
+        transition: opacity 0.3s ease;
       }
 
       /* Adding gradients for visual interest */
