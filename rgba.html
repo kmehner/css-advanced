@@ -95,21 +95,27 @@
 
       button {
         padding: 10px 20px;
-        background-color: rgba(
-          40,
-          167,
-          69,
-          0.8
-        ); /* Slightly transparent green button */
+        background-color: rgba(108, 92, 231, 0.8); /* A deep, semi-transparent purple */
         color: white;
         border: none;
-        border-radius: 5px;
+        border-radius: 20px; /* A softer more pillow like button */
         cursor: pointer;
         transition: background-color 0.3s ease;
       }
 
       button:hover {
-        background-color: rgba(33, 136, 56, 0.8);
+        background-color: rgba(255, 159, 243, 0.8); /* Transition to a soft pink */
+        box-shadow: 0 0 15px rgba(255, 159, 243, 0.8); /* Add a glowing effect */
+      }
+
+      /* Subtle animation */
+      button {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
       }
 
       img {
